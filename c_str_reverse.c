@@ -3,9 +3,16 @@
 
 void inplace_reverse(char *);
 
-int main() {
-	char str[]="The long string to be reversed";
+int main(int argc, char * argv[]) {
+	char * str;
 	char * reversed;
+
+	if (argc < 2) {
+		printf("Usage: ./a.out str \n");
+		return -1;
+	}
+
+	str = argv[1];
 
 	printf("%s\n", str);
 	inplace_reverse(str);
