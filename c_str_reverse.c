@@ -4,8 +4,7 @@
 void inplace_reverse(char *);
 
 int main(int argc, char * argv[]) {
-	char * str;
-	char * reversed;
+	char * str = NULL;
 
 	if (argc < 2) {
 		printf("Usage: ./a.out str \n");
